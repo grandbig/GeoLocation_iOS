@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E6DB1451C25283F006E0E4C /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DB1441C25283F006E0E4C /* Geo.swift */; };
 		6E9357461C1C798F00AA2AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9357451C1C798F00AA2AA6 /* AppDelegate.swift */; };
 		6E9357481C1C798F00AA2AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9357471C1C798F00AA2AA6 /* ViewController.swift */; };
 		6E93574B1C1C798F00AA2AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9357491C1C798F00AA2AA6 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		6E9357501C1C798F00AA2AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E93574E1C1C798F00AA2AA6 /* LaunchScreen.storyboard */; };
 		6E93575B1C1C798F00AA2AA6 /* GeoLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E93575A1C1C798F00AA2AA6 /* GeoLocationTests.swift */; };
 		6E9357661C1C798F00AA2AA6 /* GeoLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9357651C1C798F00AA2AA6 /* GeoLocationUITests.swift */; };
+		6E9357741C1C79A400AA2AA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9357731C1C79A400AA2AA6 /* CoreLocation.framework */; };
+		6E9357761C1C7D2200AA2AA6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9357751C1C7D2200AA2AA6 /* WebKit.framework */; };
+		F72F0607870F102F449EAE1D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3756C3F4B6164A78B61C7566 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3756C3F4B6164A78B61C7566 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2C2E240C47BDCD02A81963 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6E6DB1441C25283F006E0E4C /* Geo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
 		6E9357421C1C798F00AA2AA6 /* GeoLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9357451C1C798F00AA2AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9357471C1C798F00AA2AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		6E9357611C1C798F00AA2AA6 /* GeoLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9357651C1C798F00AA2AA6 /* GeoLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationUITests.swift; sourceTree = "<group>"; };
 		6E9357671C1C798F00AA2AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9357731C1C79A400AA2AA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E9357751C1C7D2200AA2AA6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		84F4EDE689BE356D36FB469C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9357761C1C7D2200AA2AA6 /* WebKit.framework in Frameworks */,
+				6E9357741C1C79A400AA2AA6 /* CoreLocation.framework in Frameworks */,
+				F72F0607870F102F449EAE1D /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +87,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4658C24D75ED6D0D98452D5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84F4EDE689BE356D36FB469C /* Pods.debug.xcconfig */,
+				4E2C2E240C47BDCD02A81963 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6407ED567DD9A2DD18603B27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3756C3F4B6164A78B61C7566 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E9357391C1C798F00AA2AA6 = {
 			isa = PBXGroup;
 			children = (
+				6E9357751C1C7D2200AA2AA6 /* WebKit.framework */,
+				6E9357731C1C79A400AA2AA6 /* CoreLocation.framework */,
 				6E9357441C1C798F00AA2AA6 /* GeoLocation */,
 				6E9357591C1C798F00AA2AA6 /* GeoLocationTests */,
 				6E9357641C1C798F00AA2AA6 /* GeoLocationUITests */,
 				6E9357431C1C798F00AA2AA6 /* Products */,
+				4658C24D75ED6D0D98452D5D /* Pods */,
+				6407ED567DD9A2DD18603B27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +137,7 @@
 				6E93574C1C1C798F00AA2AA6 /* Assets.xcassets */,
 				6E93574E1C1C798F00AA2AA6 /* LaunchScreen.storyboard */,
 				6E9357511C1C798F00AA2AA6 /* Info.plist */,
+				6E6DB1441C25283F006E0E4C /* Geo.swift */,
 			);
 			path = GeoLocation;
 			sourceTree = "<group>";
@@ -132,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E93576A1C1C798F00AA2AA6 /* Build configuration list for PBXNativeTarget "GeoLocation" */;
 			buildPhases = (
+				8FEC40EFEDC2F90D11104F46 /* Check Pods Manifest.lock */,
 				6E93573E1C1C798F00AA2AA6 /* Sources */,
 				6E93573F1C1C798F00AA2AA6 /* Frameworks */,
 				6E9357401C1C798F00AA2AA6 /* Resources */,
+				9B5240D866246FC35CC6A026 /* Embed Pods Frameworks */,
+				8C32930278FCF1C49946B79E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +289,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8C32930278FCF1C49946B79E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FEC40EFEDC2F90D11104F46 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5240D866246FC35CC6A026 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E93573E1C1C798F00AA2AA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +344,7 @@
 			files = (
 				6E9357481C1C798F00AA2AA6 /* ViewController.swift in Sources */,
 				6E9357461C1C798F00AA2AA6 /* AppDelegate.swift in Sources */,
+				6E6DB1451C25283F006E0E4C /* Geo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,9 +484,11 @@
 		};
 		6E93576B1C1C798F00AA2AA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F4EDE689BE356D36FB469C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GeoLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kato.GeoLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,9 +497,11 @@
 		};
 		6E93576C1C1C798F00AA2AA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2C2E240C47BDCD02A81963 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GeoLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kato.GeoLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +575,7 @@
 				6E93576C1C1C798F00AA2AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E93576D1C1C798F00AA2AA6 /* Build configuration list for PBXNativeTarget "GeoLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +584,7 @@
 				6E93576F1C1C798F00AA2AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9357701C1C798F00AA2AA6 /* Build configuration list for PBXNativeTarget "GeoLocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +593,7 @@
 				6E9357721C1C798F00AA2AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
